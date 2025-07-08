@@ -156,6 +156,12 @@ func NewOptions(options ...Option) Options {
 	return opts
 }
 
+func ConnectionTimeout(t time.Duration) Option {
+	return func(o *Options) {
+		o.CallOptions.ConnectionTimeout = t
+	}
+}
+
 // Broker to be used for pub/sub.
 func Broker(b broker.Broker) Option {
 	return func(o *Options) {
