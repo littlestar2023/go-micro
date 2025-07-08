@@ -1,4 +1,4 @@
-module go-micro.dev/v4
+module github.com/littlestar2023/go-micro/v4
 
 go 1.18
 
